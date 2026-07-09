@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: director_roi_metrics
+    description: "Aggregated return on investment (ROI) and box office metrics by director."
+    columns:
+      - name: director
+        description: "The name of the director."
+        tests:
+          - unique
+          - not_null
+      - name: roi
+        description: "Return on Investment, calculated as total US gross divided by total production budget."
+      - name: gross_sum
+        description: "Total US gross revenue for all movies directed by this person."
+      - name: budget_sum
+        description: "Total production budget for all movies directed by this person."
+      - name: movie_count
+        description: "Count of distinct movies directed."
+      - name: roi_rank
+        description: "Rank of the director based on ROI (descending)."
