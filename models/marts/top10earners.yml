@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: top10earners
+    description: A view of the top 10 movies by worldwide gross amount.
+    columns:
+      - name: movie_id
+        description: Unique identifier for a movie record.
+        data_type: integer
+      - name: title
+        description: Movie title.
+        data_type: varchar
+      - name: worldwide_gross
+        description: Total worldwide box office gross in USD.
+        data_type: bigint
