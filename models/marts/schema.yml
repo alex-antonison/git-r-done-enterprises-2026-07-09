@@ -1,0 +1,14 @@
+version 2:
+
+models:
+  - name: movies_per_director
+    description: "Marts model that aggregates number of movies per director"
+    columns:
+      - name: director
+        description: "Name of director"
+        tests:
+          - not_null
+      - name: number_of_movies
+        description: "Integer column for number of movies made per director"
+        tests:
+          - not_null
