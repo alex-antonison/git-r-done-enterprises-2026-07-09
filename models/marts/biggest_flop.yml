@@ -1,0 +1,23 @@
+version: 1
+models:
+  - name: biggest_flop
+    description: Model to find movies that
+    columns:
+      - name: title
+        description: Movie title.
+        data_type: varchar
+      - name: worldwide_gross
+        description: Total worldwide box office gross in USD.
+        data_type: bigint
+      - name: production_budget
+        description: Estimated production budget in USD.
+        data_type: bigint
+      - name: major_genres
+        description: Primary genre classification(s) for the movie.
+        data_type: varchar
+      - name: imdb_rating
+        description: IMDb user rating for the movie.
+        data_type: double
+      - name: box_office_multiple
+        description: Ratio of gross divided by production_budget.
+        data_type: double
